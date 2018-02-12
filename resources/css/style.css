@@ -11,6 +11,7 @@ header {
   border-bottom: 1px solid black;
   background-color: white;
   top: 0px;
+  left: 0px;
 }
 
 
@@ -32,10 +33,14 @@ header nav {
   padding-right: 40px;
 }
 
-
-nav span a {
-  padding: 20px 10px;
+a {
   color: black;
+}
+
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
 /* THIS IS THE END OF THE HEADER PART */
@@ -70,7 +75,6 @@ nav span a {
   margin-right: 32px;
 }
 
-/*this is temporary*/
 
 
 #MotherImage span {
@@ -81,6 +85,9 @@ nav span a {
 
 /*this is kind of repetitive*/
 #MotherImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: georgia;
   font-weight: bold;
   height: 300px;
@@ -89,6 +96,9 @@ file:///Users/alex/Desktop/Coding/WebProjects/MyTimes/resources/images/mainStory
 }
 
 #OrcaImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 300px;
   margin-top: 15px;
   font-family: georgia;
@@ -101,6 +111,9 @@ file:///Users/alex/Desktop/Coding/WebProjects/MyTimes/resources/images/mainStory
 
 
 #BurgerImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 300px;
   margin-top: 15px;
   font-family: georgia;
@@ -112,6 +125,9 @@ file:///Users/alex/Desktop/Coding/WebProjects/MyTimes/resources/images/mainStory
 }
 
 #CatsImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 300px;
   margin-top: 15px;
   font-family: georgia;
@@ -144,4 +160,37 @@ file:///Users/alex/Desktop/Coding/WebProjects/MyTimes/resources/images/mainStory
   color: DimGray;
   border-bottom: 1px solid black;
   padding: 11px 20px;
+}
+
+/*THIS IS THE FOOTER PART*/
+footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  display: flex;
+  width: 100%;
+  height: 325px;
+  font-size:12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#MyTimes {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: georgia;
+  font-size:16px;
+  font-weight: bold;
+  color: white;
+}
+
+#bottom {
+  padding-left: 25px;
+  display: inline-block;
+}
+
+p {
+  display: inline-block;
 }
